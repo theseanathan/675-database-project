@@ -6,7 +6,7 @@ const heightTable = props => {
   let { dataFromDb } = props;
   console.log(props);
   return (
-    <div>
+    <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
       <text>Heights</text>
       <Table striped bordered hover>
         <thead>

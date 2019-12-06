@@ -6,7 +6,7 @@ const playerTable = props => {
   let { dataFromDb } = props;
   console.log(props);
   return (
-    <div>
+    <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
       <text>Players</text>
       <Table striped bordered hover>
         <thead>

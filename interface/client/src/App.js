@@ -64,26 +64,34 @@ class App extends React.Component {
     console.log(data);
   };
 
-    /* Players Name */
-    updatePlayerName = e => {
-      this.setState({
-        name: e.target.value
-      });
-    };
-  
-    submitPlayerName = async () => {
-      let { name } = this.state;
-      let route = "/playername?name=" + name;
-      let res = await axios.get(route);
-      let { data } = res;
-      this.setState({
-        playerName: [...data]
-      });
-      console.log(data);
-    };
+  /* Players Name */
+  updatePlayerName = e => {
+    this.setState({
+      name: e.target.value
+    });
+  };
+
+  submitPlayerName = async () => {
+    let { name } = this.state;
+    let route = "/playername?name=" + name;
+    let res = await axios.get(route);
+    let { data } = res;
+    this.setState({
+      playerName: [...data]
+    });
+    console.log(data);
+  };
 
   render() {
-    let { updateStartDate, updateEndDate, submitDates, updateHeightInput, submitHeight, updatePlayerName, submitPlayerName} = this;
+    let {
+      updateStartDate,
+      updateEndDate,
+      submitDates,
+      updateHeightInput,
+      submitHeight,
+      updatePlayerName,
+      submitPlayerName
+    } = this;
     return (
       <div className="App">
         <div>
@@ -126,7 +134,7 @@ class App extends React.Component {
           <button onClick={submitPlayerName}>Submit</button>
           <br></br>
         </div>
-        
+
         {this.state.matchData.length > 0 && (
           <MatchTable dataFromDb={this.state.matchData} />
         )}
@@ -138,9 +146,6 @@ class App extends React.Component {
         {this.state.playerName.length > 0 && (
           <PlayerTable dataFromDb={this.state.playerName} />
         )}
-
-
-        
       </div>
     );
   }

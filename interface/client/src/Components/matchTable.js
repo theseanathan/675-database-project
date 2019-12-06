@@ -6,7 +6,7 @@ const matchTable = props => {
   let { dataFromDb } = props;
   console.log(props);
   return (
-    <div>
+    <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
       <text>Seasons</text>
       <Table striped bordered hover>
         <thead>
