@@ -19,10 +19,11 @@ CREATE TABLE Team (
     team_id INT NOT NULL,
     team_name VARCHAR(55) NOT NULL,
     PRIMARY KEY (tid),
-    UNIQUE KEY team_name (name)
-)
+    UNIQUE KEY team_name (team_name),
+    UNIQUE KEY team_id (team_id)
+);
 
-CREATE TABLE Match (
+CREATE TABLE `Match` (
     mid INT NOT NULL,
     lid INT NOT NULL,
     cid INT NOT NULL,
@@ -32,9 +33,7 @@ CREATE TABLE Match (
     guest_team_goal INT NOT NULL,
     PRIMARY KEY (mid),
     FOREIGN KEY (lid) REFERENCES League (lid) ON DELETE NO ACTION ON UPDATE CASCADE,
-    FOREIGN KEY (cid) REFERENCES Country (cid) ON DELETE NO ACTION ON UPDATE CASCADE,
-    FOREIGN KEY (home_team_id) REFERENCES Team (tid) ON DELETE NO ACTION ON UPDATE CASCADE,
-    FOREIGN KEY (guest_team_id) REFERENCES Team (tid) ON DELETE NO ACTION ON UPDATE CASCADE,
+    FOREIGN KEY (cid) REFERENCES Country (cid) ON DELETE NO ACTION ON UPDATE CASCADE
 );
 
 CREATE TABLE Player (
