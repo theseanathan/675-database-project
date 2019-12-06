@@ -4,6 +4,7 @@ import "./App.css";
 import axios from "axios";
 import MatchTable from "./Components/matchTable";
 import HeightTable from "./Components/heightTable";
+import PlayerTable from "./Components/playerTable";
 
 class App extends React.Component {
   constructor(props) {
@@ -12,8 +13,10 @@ class App extends React.Component {
       startDate: "",
       endDate: "",
       inputHeight: "",
+      name: "",
       matchData: [],
-      playerHeight: []
+      playerHeight: [],
+      playerName: []
     };
   }
 
@@ -61,8 +64,26 @@ class App extends React.Component {
     console.log(data);
   };
 
+    /* Players Name */
+    updatePlayerName = e => {
+      this.setState({
+        name: e.target.value
+      });
+    };
+  
+    submitPlayerName = async () => {
+      let { name } = this.state;
+      let route = "/playername?name=" + name;
+      let res = await axios.get(route);
+      let { data } = res;
+      this.setState({
+        playerName: [...data]
+      });
+      console.log(data);
+    };
+
   render() {
-    let { updateStartDate, updateEndDate, submitDates, updateHeightInput, submitHeight } = this;
+    let { updateStartDate, updateEndDate, submitDates, updateHeightInput, submitHeight, updatePlayerName, submitPlayerName} = this;
     return (
       <div className="App">
         <div>
@@ -87,6 +108,25 @@ class App extends React.Component {
         </div>
         <br></br>
         <br></br>
+        <div>
+          <text>Players by Name</text>
+          <br></br>
+          <text>Enter Player Name</text>
+          <input onChange={updatePlayerName}></input>
+          <button onClick={submitPlayerName}>Submit</button>
+          <br></br>
+        </div>
+        <br></br>
+        <br></br>
+        <div>
+          <text>Players by with same height as input Player</text>
+          <br></br>
+          <text>Enter Player Name</text>
+          <input onChange={updatePlayerName}></input>
+          <button onClick={submitPlayerName}>Submit</button>
+          <br></br>
+        </div>
+        
         {this.state.matchData.length > 0 && (
           <MatchTable dataFromDb={this.state.matchData} />
         )}
@@ -94,6 +134,13 @@ class App extends React.Component {
         {this.state.playerHeight.length > 0 && (
           <HeightTable dataFromDb={this.state.playerHeight} />
         )}
+
+        {this.state.playerName.length > 0 && (
+          <PlayerTable dataFromDb={this.state.playerName} />
+        )}
+
+
+        
       </div>
     );
   }

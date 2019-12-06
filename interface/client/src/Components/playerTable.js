@@ -2,16 +2,18 @@ import React, { Component } from "react";
 import Table from "react-bootstrap/Table";
 
 
-const heightTable = props => {
+const playerTable = props => {
   let { dataFromDb } = props;
   console.log(props);
   return (
     <div>
-      <text>Heights</text>
+      <text>Players</text>
       <Table striped bordered hover>
         <thead>
           <th>pid</th>
           <th>player_name</th>
+          <th>player_id</th>
+          <th>birthday</th>
         </thead>
         <tbody className="input">
           {dataFromDb.map(x => {
@@ -20,6 +22,8 @@ const heightTable = props => {
               <tr>
                 <td>{pid}</td>
                 <td>{player_name}</td>
+                <td>{player_id}</td>
+                <td>{birthday}</td>
               </tr>
             );
           })}
@@ -29,4 +33,4 @@ const heightTable = props => {
   );
 };
 
-export default heightTable;
+export default playerTable;
