@@ -1,0 +1,300 @@
+id,team_api_id,team_long_name
+1,9987,"KRC Genk"
+2,9993,"Beerschot AC"
+3,10000,"SV Zulte-Waregem"
+4,9994,"Sporting Lokeren"
+5,9984,"KSV Cercle Brugge"
+6,8635,"RSC Anderlecht"
+7,9991,"KAA Gent"
+8,9998,"RAEC Mons"
+9,7947,"FCV Dender EH"
+10,9985,"Standard de Liège"
+11,8203,"KV Mechelen"
+12,8342,"Club Brugge KV"
+13,9999,"KSV Roeselare"
+14,8571,"KV Kortrijk"
+15,4049,Tubize
+16,9996,"Royal Excel Mouscron"
+17,10001,"KVC Westerlo"
+18,9986,"Sporting Charleroi"
+614,9997,"Sint-Truidense VV"
+1034,9989,"Lierse SK"
+1042,6351,"KAS Eupen"
+1513,1773,"Oud-Heverlee Leuven"
+2004,8475,Waasland-Beveren
+2476,8573,"KV Oostende"
+2510,274581,"Royal Excel Mouscron"
+3457,10260,"Manchester United"
+3458,10261,"Newcastle United"
+3459,9825,Arsenal
+3460,8659,"West Bromwich Albion"
+3461,8472,Sunderland
+3462,8650,Liverpool
+3463,8654,"West Ham United"
+3464,8528,"Wigan Athletic"
+3465,10252,"Aston Villa"
+3466,8456,"Manchester City"
+3467,8668,Everton
+3468,8655,"Blackburn Rovers"
+3469,8549,Middlesbrough
+3470,8586,"Tottenham Hotspur"
+3471,8559,"Bolton Wanderers"
+3472,10194,"Stoke City"
+3473,8667,"Hull City"
+3474,9879,Fulham
+3475,8455,Chelsea
+3476,8462,Portsmouth
+4218,8658,"Birmingham City"
+4225,8602,"Wolverhampton Wanderers"
+4234,8191,Burnley
+4996,8483,Blackpool
+5744,10003,"Swansea City"
+5747,10172,"Queens Park Rangers"
+5756,9850,"Norwich City"
+6504,8466,Southampton
+6509,9798,Reading
+7261,9826,"Crystal Palace"
+7276,8344,"Cardiff City"
+8021,8197,"Leicester City"
+8779,8678,Bournemouth
+8784,9817,Watford
+9537,8583,"AJ Auxerre"
+9538,9830,"FC Nantes"
+9539,9827,"Girondins de Bordeaux"
+9540,7819,"SM Caen"
+9541,9746,"Le Havre AC"
+9542,9831,"OGC Nice"
+9543,8682,"Le Mans FC"
+9544,8689,"FC Lorient"
+9545,9748,"Olympique Lyonnais"
+9546,9941,"Toulouse FC"
+9547,9829,"AS Monaco"
+9548,9847,"Paris Saint-Germain"
+9549,8481,"AS Nancy-Lorraine"
+9550,8639,"LOSC Lille"
+9551,9851,"Stade Rennais FC"
+9552,8592,"Olympique de Marseille"
+9553,9874,"FC Sochaux-Montbéliard"
+9554,9855,"Grenoble Foot 38"
+9555,9873,"Valenciennes FC"
+9556,9853,"AS Saint-Étienne"
+10300,8588,"RC Lens"
+10309,10249,"Montpellier Hérault SC"
+10312,4170,"US Boulogne Cote D'Opale"
+11074,108893,"AC Arles-Avignon"
+11076,8521,"Stade Brestois 29"
+11817,8576,"AC Ajaccio"
+11822,4087,"Évian Thonon Gaillard FC"
+11825,9836,"Dijon FCO"
+12587,9837,"Stade de Reims"
+12594,7794,"SC Bastia"
+12595,10242,"ES Troyes AC"
+13343,9747,"En Avant de Guingamp"
+14106,8550,"FC Metz"
+14868,8121,"Angers SCO"
+14876,6391,"GFC Ajaccio"
+15617,9823,"FC Bayern Munich"
+15618,9790,"Hamburger SV"
+15619,8178,"Bayer 04 Leverkusen"
+15620,9789,"Borussia Dortmund"
+15621,10189,"FC Schalke 04"
+15622,9904,"Hannover 96"
+15623,8721,"VfL Wolfsburg"
+15624,8722,"1. FC Köln"
+15625,9810,"Eintracht Frankfurt"
+15626,8177,"Hertha BSC Berlin"
+15627,9912,"DSC Arminia Bielefeld"
+15628,8697,"SV Werder Bremen"
+15629,8398,"FC Energie Cottbus"
+15630,8226,"TSG 1899 Hoffenheim"
+15631,9788,"Borussia Mönchengladbach"
+15632,10269,"VfB Stuttgart"
+15633,8295,"Karlsruher SC"
+15634,9911,"VfL Bochum"
+16237,8358,"SC Freiburg"
+16239,8165,"1. FC Nürnberg"
+16243,9905,"1. FSV Mainz 05"
+16848,8350,"1. FC Kaiserslautern"
+16850,8152,"FC St. Pauli"
+17465,8406,"FC Augsburg"
+18074,8194,"Fortuna Düsseldorf"
+18079,8357,"SpVgg Greuther Fürth"
+18691,9776,"Eintracht Braunschweig"
+19305,8460,"SC Paderborn 07"
+19916,8234,"FC Ingolstadt 04"
+19917,8262,"SV Darmstadt 98"
+20513,8524,Atalanta
+20514,8551,Siena
+20515,8529,Cagliari
+20516,8543,Lazio
+20517,8530,Catania
+20518,10233,Genoa
+20519,8533,"Chievo Verona"
+20520,8690,"Reggio Calabria"
+20521,8535,Fiorentina
+20522,9885,Juventus
+20523,8564,Milan
+20524,9857,Bologna
+20525,8686,Roma
+20526,9875,Napoli
+20527,9882,Sampdoria
+20528,8636,Inter
+20529,9804,Torino
+20530,9888,Lecce
+20531,8600,Udinese
+20532,8540,Palermo
+21280,9976,Bari
+21285,8537,Livorno
+21292,10167,Parma
+22042,9880,Cesena
+22044,9858,Brescia
+22805,6269,Novara
+23523,9878,Pescara
+24273,9876,"Hellas Verona"
+24288,7943,Sassuolo
+25048,8534,Empoli
+25791,9891,Frosinone
+25804,208931,Carpi
+26547,8277,Vitesse
+26548,8674,"FC Groningen"
+26549,9803,"Roda JC Kerkrade"
+26550,8611,"FC Twente"
+26551,8525,"Willem II"
+26552,8593,Ajax
+26553,8464,N.E.C.
+26554,8526,"De Graafschap"
+26555,9908,"FC Utrecht"
+26556,8640,PSV
+26557,9791,"Heracles Almelo"
+26558,10235,Feyenoord
+26559,8614,"Sparta Rotterdam"
+26560,10217,"ADO Den Haag"
+26561,6601,"FC Volendam"
+26562,10228,"SC Heerenveen"
+26563,10229,AZ
+26564,9761,"NAC Breda"
+27161,10219,"RKC Waalwijk"
+27168,9839,VVV-Venlo
+27780,10218,Excelsior
+29000,6413,"PEC Zwolle"
+29617,7788,"SC Cambuur"
+29624,6433,"Go Ahead Eagles"
+30222,6631,"FC Dordrecht"
+31443,10265,"Wisła Kraków"
+31444,8031,"Polonia Bytom"
+31445,8020,"Polonia Bytom"
+31446,1601,"Ruch Chorzów"
+31447,8673,"Legia Warszawa"
+31448,2183,"P. Warszawa"
+31449,8025,"Śląsk Wrocław"
+31450,8030,"Lechia Gdańsk"
+31451,8244,"Widzew Łódź"
+31452,8242,"Odra Wodzisław"
+31453,2182,"Lech Poznań"
+31454,8569,"GKS Bełchatów"
+31455,8322,"Arka Gdynia"
+31456,1957,"Jagiellonia Białystok"
+31457,8028,"Piast Gliwice"
+31458,2186,Cracovia
+31925,8245,"Korona Kielce"
+31928,8021,"Zagłębie Lubin"
+32409,8024,"Widzew Łódź"
+32891,8033,"Podbeskidzie Bielsko-Biała"
+33377,8023,"Pogoń Szczecin"
+33855,8027,"Zawisza Bydgoszcz"
+34337,8019,"Górnik Łęczna"
+34816,177361,"Termalica Bruk-Bet Nieciecza"
+35283,9773,"FC Porto"
+35284,9807,"CF Os Belenenses"
+35285,9768,"Sporting CP"
+35286,7992,Trofense
+35287,7844,"Vitória Guimarães"
+35288,10238,"Vitória Setúbal"
+35289,6403,"FC Paços de Ferreira"
+35290,10264,"SC Braga"
+35291,10213,Amadora
+35292,10215,"Académica de Coimbra"
+35293,7841,"Rio Ave FC"
+35294,9772,"SL Benfica"
+35295,6421,"Leixões SC"
+35296,10214,"CD Nacional"
+35297,9809,"Naval 1° de Maio"
+35298,10212,"CS Marítimo"
+35769,9771,"União de Leiria, SAD"
+35774,2033,"S.C. Olhanense"
+36248,9765,Portimonense
+36253,10211,"SC Beira Mar"
+36723,4064,Feirense
+36735,9764,"Gil Vicente FC"
+37210,8348,"Moreirense FC"
+37214,7842,"Estoril Praia"
+37696,158085,"FC Arouca"
+38173,6547,"FC Penafiel"
+38176,8613,"Boavista FC"
+38789,6367,"Uniao da Madeira"
+38791,188163,Tondela
+39387,8596,Falkirk
+39388,8548,Rangers
+39389,9860,"Heart of Midlothian"
+39390,9927,Motherwell
+39391,8597,Kilmarnock
+39392,10251,Hibernian
+39393,8485,Aberdeen
+39394,8066,"Inverness Caledonian Thistle"
+39395,9925,Celtic
+39396,9800,"St. Mirren"
+39397,8429,"Hamilton Academical FC"
+39398,9938,"Dundee United"
+39853,8467,"St. Johnstone FC"
+40757,8457,"Dunfermline Athletic"
+41216,8284,"Dundee FC"
+41217,8649,"Ross County FC"
+41673,8426,"Partick Thistle F.C."
+43035,10267,"Valencia CF"
+43036,8661,"RCD Mallorca"
+43037,8371,"CA Osasuna"
+43038,10205,"Villarreal CF"
+43039,9783,"RC Deportivo de La Coruña"
+43040,8633,"Real Madrid CF"
+43041,8388,"CD Numancia"
+43042,8634,"FC Barcelona"
+43043,8696,"Racing Santander"
+43044,8302,"Sevilla FC"
+43045,9869,"Real Sporting de Gijón"
+43046,8305,"Getafe CF"
+43047,8603,"Real Betis Balompié"
+43048,8479,"RC Recreativo"
+43049,8558,"RCD Espanyol"
+43050,10281,"Real Valladolid"
+43051,8315,"Athletic Club de Bilbao"
+43052,9865,"UD Almería"
+43053,9906,"Atlético Madrid"
+43054,9864,"Málaga CF"
+43800,9868,"Xerez Club Deportivo"
+43803,8394,"Real Zaragoza"
+43804,9867,"CD Tenerife"
+44557,10278,"Hércules Club de Fútbol"
+44565,8581,"Levante UD"
+44569,8560,"Real Sociedad"
+45330,7878,"Granada CF"
+45333,8370,"Rayo Vallecano"
+46087,9910,"RC Celta de Vigo"
+46848,10268,"Elche CF"
+47605,8372,"SD Eibar"
+47612,7869,"Córdoba CF"
+48358,8306,"UD Las Palmas"
+49115,9956,"Grasshopper Club Zürich"
+49116,6493,"AC Bellinzona"
+49117,10192,"BSC Young Boys"
+49118,9931,"FC Basel"
+49119,9930,"FC Aarau"
+49120,10179,"FC Sion"
+49121,10199,"FC Luzern"
+49122,9824,"FC Vaduz"
+49123,7955,"Neuchâtel Xamax"
+49124,10243,"FC Zürich"
+49479,10190,"FC St. Gallen"
+49837,10191,"FC Thun"
+50201,9777,"Servette FC"
+50204,7730,"FC Lausanne-Sports"
+51606,7896,Lugano
