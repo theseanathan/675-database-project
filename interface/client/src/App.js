@@ -2,9 +2,11 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import axios from "axios";
-import MatchTable from "./Components/matchTable";
+import AvgHomeGoals from "./Components/avgHomeGoals";
 import HeightTable from "./Components/heightTable";
 import PlayerTable from "./Components/playerTable";
+import MostGoals from "./Components/mostGoals";
+import Nohome from "./Components/nohome";
 
 class App extends React.Component {
   constructor(props) {
@@ -14,35 +16,25 @@ class App extends React.Component {
       endDate: "",
       inputHeight: "",
       name: "",
-      matchData: [],
+      avgHomeGoals: [],
       playerHeight: [],
-      playerName: []
+      playerName: [],
+      teamMostGoals: [],
+      noHome: []
     };
   }
 
   /*season*/
-  updateStartDate = e => {
-    console.log(e.target.value);
-    this.setState({
-      startDate: e.target.value
-    });
-  };
-
-  updateEndDate = e => {
-    this.setState({
-      endDate: e.target.value
-    });
-  };
-
-  submitDates = async () => {
-    let startDate = this.state.startDate;
-    let endDate = this.state.endDate;
-    let route = "/dates?startDate=" + startDate + "&endDate=" + endDate;
+  getAvgHomeGoals = async () => {
+    // let startDate = this.state.startDate;
+    // let endDate = this.state.endDate;
+    // let route = "/dates?startDate=" + startDate + "&endDate=" + endDate;
+    let route = "/avgHomeGoal";
     let res = await axios.get(route);
     console.log(res);
     let { data } = res;
     this.setState({
-      matchData: [...data]
+      avgHomeGoals: [...data]
     });
   };
 
@@ -82,61 +74,92 @@ class App extends React.Component {
     console.log(data);
   };
 
+  /*teamWithMostGoals*/
+  teamWithMostGoals = async () => {
+    let route = "/mostgoals";
+    let res = await axios.get(route);
+    console.log(res);
+    let { data } = res;
+    this.setState({
+      teamMostGoals: [...data]
+    });
+  };
+
+  /*noHome*/
+  noHome = async () => {
+    let route = "/nohome";
+    let res = await axios.get(route);
+    console.log(res);
+    let data = res.data;
+    this.setState({
+      noHome: [...data]
+    })
+  }
+
   render() {
     let {
-      updateStartDate,
-      updateEndDate,
-      submitDates,
+      getAvgHomeGoals,
+      noHome,
       updateHeightInput,
       submitHeight,
       updatePlayerName,
-      submitPlayerName
+      submitPlayerName,
+      teamWithMostGoals
     } = this;
     return (
       <div className="App">
         <div>
-          <text>max of the home team and the away team goals</text>
-          <br></br>
-          <text>Start Date</text>
-          <input onChange={updateStartDate}></input>
-          <text>End Date</text>
-          <input onChange={updateEndDate}></input>
-          <button onClick={submitDates}>Submit</button>
+          <h4>Avg Home Goals</h4>
+          <button onClick={getAvgHomeGoals}>Submit</button>
           <br></br>
         </div>
         <br></br>
         <br></br>
         <div>
-          <text>Players by minimum height</text>
-          <br></br>
-          <text>Enter Height</text>
-          <input onChange={updateHeightInput}></input>
+          <h4>Teams who have played a home game</h4>
           <button onClick={submitHeight}>Submit</button>
           <br></br>
         </div>
         <br></br>
         <br></br>
         <div>
-          <text>Players by Name</text>
+          <h4>Average Score based on Team ID</h4>
+          <text>Enter Team ID</text>
+          <input onChange={updatePlayerName}></input>
+          <button onClick={submitPlayerName}>Submit</button>
           <br></br>
+        </div>
+        {/* <br></br>
+        <br></br>
+        <div>
+          <h4>Players by with same height as input Player</h4>
           <text>Enter Player Name</text>
           <input onChange={updatePlayerName}></input>
           <button onClick={submitPlayerName}>Submit</button>
+          <br></br>
+        </div> */}
+        <br></br>
+        <br></br>
+        <div>
+          <h4>Team with Most Goals</h4>
+          <button onClick={teamWithMostGoals}>Submit</button>
           <br></br>
         </div>
         <br></br>
         <br></br>
         <div>
-          <text>Players by with same height as input Player</text>
-          <br></br>
-          <text>Enter Player Name</text>
-          <input onChange={updatePlayerName}></input>
-          <button onClick={submitPlayerName}>Submit</button>
+          <h4>Team with No Home Games</h4>
+          <button onClick={noHome}>Submit</button>
           <br></br>
         </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
 
-        {this.state.matchData.length > 0 && (
-          <MatchTable dataFromDb={this.state.matchData} />
+        {this.state.avgHomeGoals.length > 0 && (
+          <AvgHomeGoals dataFromDb={this.state.avgHomeGoals} />
         )}
 
         {this.state.playerHeight.length > 0 && (
@@ -146,6 +169,15 @@ class App extends React.Component {
         {this.state.playerName.length > 0 && (
           <PlayerTable dataFromDb={this.state.playerName} />
         )}
+        
+        {this.state.teamMostGoals.length > 0 && (
+          <MostGoals dataFromDb={this.state.teamMostGoals} />
+        )}
+
+        {this.state.noHome.length > 0 && (
+          <Nohome dataFromDb={this.state.noHome} />
+        )}
+        
       </div>
     );
   }

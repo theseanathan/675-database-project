@@ -1,25 +1,24 @@
 import React, { Component } from "react";
 import Table from "react-bootstrap/Table";
 
-
-const heightTable = props => {
+const homeMatchTeams = props => {
   let { dataFromDb } = props;
   console.log(props);
   return (
     <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-      <text>Heights</text>
+      <text>Home Game Teams</text>
       <Table striped bordered hover>
         <thead>
-          <th>pid</th>
-          <th>player_name</th>
+          <th>team_id</th>
+          <th>team_name</th>
         </thead>
         <tbody className="input">
           {dataFromDb.map(x => {
-            let { pid, player_name, player_id, birthday } = x;
+            let { team_id, team_name} = x;
             return (
               <tr>
-                <td>{pid}</td>
-                <td>{player_name}</td>
+                <td>{team_id}</td>
+                <td>{team_name}</td>
               </tr>
             );
           })}
@@ -29,4 +28,4 @@ const heightTable = props => {
   );
 };
 
-export default heightTable;
+export default homeMatchTeams;
