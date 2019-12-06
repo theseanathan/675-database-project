@@ -1,0 +1,8 @@
+# 675 Interface Setup Instructions
+1. First follow databse instructions in DB folder
+2. cd into client
+3. npm install
+4. run `npm start` in client folder
+5. in another tab cd into server folder
+6. npm install
+7. run `node server.js` in server folder
