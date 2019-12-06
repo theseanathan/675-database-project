@@ -47,6 +47,17 @@ app.get('/heights', function(req, res ) {
     });
 });
 
+app.get('/playername', function(req, res ) {
+    console.log(req.query);
+    // let query = "SELECT MAX(home_team_goal), MAX(away_team_goal), season from `Match` GROUP BY season HAVING season BETWEEN `2012/2013` AND `2015,2016`";
+    let query = 'SELECT * FROM Player ORDER BY pid DESC LIMIT 1 OFFSET 1';
+    console.log(query);
+    db.query(query, function(err, response) {
+        // should handle err but too damn late at night to.
+        if(err) res.send("ERROR_DB");        
+        res.send(response);
+    });
+});
 
 // set the app to listen on the port
 app.listen(port, () => {
